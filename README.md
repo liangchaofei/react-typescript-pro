@@ -155,3 +155,24 @@
 ### 四、关于`typescript`构建`react`项目注意点
 * 1、`extends React.Component<object,State>`中泛型是`props`和`state`如果没有就传递`object`
 * 2、定义未使用就会报错
+* 3、`react`中获取`DOM`元素的方法
+
+    ```
+    import * as ReactDOM from 'react-dom';
+    ...
+    return (
+        <div className="hello">
+            <div className="greeting">
+                Hello word
+                <p ref="myp">1111--{this.state.num1}</p>
+                <input value="添加" onClick={this.add} type="button"/>
+            </div>
+        </div>
+    );
+    ...
+    componentDidMount(){
+        console.log(`componentDidMount方法`);
+        var myp = ReactDOM.findDOMNode<HTMLInputElement>(this.refs["myp"]);
+        console.log(myp.innerText);
+    }
+    ```
