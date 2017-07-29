@@ -151,3 +151,7 @@
     
 * 5、代码见react_ts02
 
+
+### 四、关于`typescript`构建`react`项目注意点
+* 1、`extends React.Component<object,State>`中泛型是`props`和`state`如果没有就传递`object`
+* 2、定义未使用就会报错
