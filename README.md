@@ -119,6 +119,9 @@
     
 * 9、打包，运行
 * 10、代码见react_ts01
+* 11、项目结构
+
+    ![项目结构](http://img.blog.csdn.net/20170729125823431?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3VhbmdzaHAxMjg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "")
 
 ### 三、使用`create-react-app`构建`react`项目
 
